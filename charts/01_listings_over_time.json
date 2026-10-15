@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Australia's National Heritage Listings Over Time",
   "data": {
-    "url": "../data/listings_by_year.csv",
+    "url": "data/listings_by_year.csv",
     "format": {
       "type": "csv"
     }
