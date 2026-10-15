@@ -39,7 +39,7 @@
   "layer": [
     {
       "data": {
-        "url": "../data/australian-states.json",
+        "url": "data/australian-states.json",
         "format": {
           "property": "features"
         }
@@ -54,7 +54,7 @@
 
     {
       "data": {
-        "url": "../data/heritage_funding_polygons_simplified.geojson",
+        "url": "data/heritage_funding_polygons_simplified.geojson",
         "format": {
           "type": "json",
           "property": "features"
@@ -103,7 +103,7 @@
 
     {
       "data": {
-        "url": "../data/heritage_funding_polygons_simplified.geojson",
+        "url": "data/heritage_funding_polygons_simplified.geojson",
         "format": {
           "type": "json",
           "property": "features"
