@@ -23,7 +23,7 @@
     },
     {
       "data": {
-        "url": "../data/heritage_points.json",
+        "url": "data/heritage_points.json",
         "format": {
           "type": "json",
           "property": "features"
