@@ -3,7 +3,7 @@
   "width": "container",
   "height": 320,
   "data": {
-    "url": "../data/funding_by_state_year.csv"
+    "url": "data/funding_by_state_year.csv"
   },
   "mark": {
     "type": "rect",
