@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Total recorded heritage grant funding by funding round, excluding GST.",
   "data": {
-    "url": "../data/grants_by_round.csv",
+    "url": "data/grants_by_round.csv",
     "format": {
       "type": "csv",
       "parse": {
