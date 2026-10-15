@@ -3,7 +3,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Composition of unique National Heritage List places by heritage class.",
   "data": {
-    "url": "../data/listings_by_class.csv",
+    "url": "data/listings_by_class.csv",
     "format": {
       "type": "csv"
     }
