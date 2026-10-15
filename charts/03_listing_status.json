@@ -1,0 +1,100 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Distribution of National Heritage List places by recorded status.",
+  "data": {
+    "url": "../data/listing_status_waffle.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "status",
+        "oneOf": [
+          "Listed place",
+          "Nominated place",
+          "Within listed place"
+        ]
+      }
+    },
+    {
+      "calculate": "(toNumber(datum.square) - 1) % 10",
+      "as": "column"
+    },
+    {
+      "calculate": "floor((toNumber(datum.square) - 1) / 10)",
+      "as": "row"
+    }
+  ],
+  "width": 300,
+  "height": 300,
+  "mark": {
+    "type": "rect",
+    "stroke": "#FFFEFA",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "column",
+      "type": "ordinal",
+      "title": null,
+      "axis": null,
+      "scale": {
+        "paddingInner": 0.08,
+        "paddingOuter": 0.02
+      }
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "title": null,
+      "axis": null,
+      "sort": "descending",
+      "scale": {
+        "paddingInner": 0.08,
+        "paddingOuter": 0.02
+      }
+    },
+    "color": {
+      "field": "status",
+      "type": "nominal",
+      "title": "Listing status",
+      "scale": {
+        "domain": [
+          "Listed place",
+          "Nominated place",
+          "Within listed place"
+        ],
+        "range": [
+          "#23483D",
+          "#D8A756",
+          "#B85F45"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "status",
+        "type": "nominal",
+        "title": "Listing status"
+      },
+      {
+        "field": "square",
+        "type": "quantitative",
+        "title": "Place number"
+      }
+    ]
+  },
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    }
+  }
+}

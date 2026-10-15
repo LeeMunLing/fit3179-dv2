@@ -1,0 +1,211 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 450,
+
+  "params": [
+    {
+      "name": "map_region",
+      "value": "Australia",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Australia",
+          "WA",
+          "NT",
+          "SA",
+          "QLD",
+          "NSW",
+          "ACT",
+          "VIC",
+          "TAS"
+        ],
+        "name": "Map Region: "
+      }
+    }
+  ],
+
+  "projection": {
+    "type": "mercator",
+    "center": {
+      "expr": "map_region === 'Australia' ? [134, -25] : map_region === 'WA' ? [113.5, -25.5] : map_region === 'NT' ? [133.5, -18.5] : map_region === 'SA' ? [134, -32] : map_region === 'QLD' ? [150, -18] : map_region === 'NSW' ? [147, -32] : map_region === 'ACT' ? [149.1, -35.3] : map_region === 'VIC' ? [145, -37] : [146.5, -42]"
+    },
+    "scale": {
+      "expr": "map_region === 'Australia' ? 550 : map_region === 'WA' ? 1000 : map_region === 'NT' ? 1500 : map_region === 'SA' ? 1700 : map_region === 'QLD' ? 1000 : map_region === 'NSW' ? 2200 : map_region === 'ACT' ? 12000 : map_region === 'VIC' ? 3500 : 5000"
+    }
+  },
+
+  "layer": [
+    {
+      "data": {
+        "url": "../data/australian-states.json",
+        "format": {
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#F1F0EA",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1
+      }
+    },
+
+    {
+      "data": {
+        "url": "../data/heritage_funding_polygons_simplified.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.NAME !== 'Lord Howe Island Group' && datum.properties.NAME !== 'The Battle of the Coral Sea Site'"
+        },
+        {
+          "calculate": "isValid(datum.properties.total_funding) && datum.properties.total_funding != null ? datum.properties.total_funding : '-'",
+          "as": "funding_tooltip"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#D8D8D8",
+        "stroke": "#777777",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "properties.NAME",
+            "type": "nominal",
+            "title": "Heritage site"
+          },
+          {
+            "field": "properties.STATE",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "funding_tooltip",
+            "type": "nominal",
+            "title": "Total grant funding ($)"
+          },
+          {
+            "field": "properties.funding_records",
+            "type": "quantitative",
+            "title": "Grant records"
+          }
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "url": "../data/heritage_funding_polygons_simplified.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.NAME !== 'Lord Howe Island Group' && datum.properties.NAME !== 'The Battle of the Coral Sea Site'"
+        },
+        {
+          "calculate": "datum.properties.total_funding",
+          "as": "funding"
+        },
+        {
+          "filter": "isValid(datum.funding) && datum.funding != null"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#777777",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "color": {
+          "field": "funding",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "blues",
+            "domainMin": 0
+          },
+          "legend": {
+            "title": "Grant funding ($)",
+            "format": "$,.0f"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.NAME",
+            "type": "nominal",
+            "title": "Heritage site"
+          },
+          {
+            "field": "properties.STATE",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "funding",
+            "type": "quantitative",
+            "title": "Total grant funding ($)",
+            "format": "$,.0f"
+          },
+          {
+            "field": "properties.funding_records",
+            "type": "quantitative",
+            "title": "Grant records"
+          }
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "values": [
+          {"state": "WA", "lon": 121.5, "lat": -25.5},
+          {"state": "NT", "lon": 133.5, "lat": -19.5},
+          {"state": "SA", "lon": 135, "lat": -30},
+          {"state": "QLD", "lon": 145, "lat": -22},
+          {"state": "NSW", "lon": 147, "lat": -32},
+          {"state": "ACT", "lon": 149.1, "lat": -35.3},
+          {"state": "VIC", "lon": 145, "lat": -37.2},
+          {"state": "TAS", "lon": 146.5, "lat": -42}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#000000",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    }
+  }
+}

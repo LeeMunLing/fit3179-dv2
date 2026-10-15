@@ -1,0 +1,113 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Geographic distribution of National Heritage List places by Australian state and territory.",
+  "width": 550,
+  "height": 420,
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "../data/australian-states.json",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.properties.STATE_NAME",
+          "as": "state_name"
+        },
+        {
+          "calculate": "datum.state_name === 'New South Wales' ? 'NSW' : datum.state_name === 'Victoria' ? 'VIC' : datum.state_name === 'Queensland' ? 'QLD' : datum.state_name === 'South Australia' ? 'SA' : datum.state_name === 'Western Australia' ? 'WA' : datum.state_name === 'Tasmania' ? 'TAS' : datum.state_name === 'Northern Territory' ? 'NT' : datum.state_name === 'Australian Capital Territory' ? 'ACT' : 'UNKNOWN'",
+          "as": "state_code"
+        },
+        {
+          "lookup": "state_code",
+          "from": {
+            "data": {
+              "url": "../data/listings_by_state.csv",
+              "format": {
+                "type": "csv"
+              }
+            },
+            "key": "state",
+            "fields": ["count"]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FFFEFA",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "color": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Heritage places",
+          "scale": {
+            "scheme": "greens"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state_name",
+            "type": "nominal",
+            "title": "State or territory"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Heritage places"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"state_code": "WA", "longitude": 121, "latitude": -25},
+          {"state_code": "NT", "longitude": 133, "latitude": -19},
+          {"state_code": "SA", "longitude": 135, "latitude": -30},
+          {"state_code": "QLD", "longitude": 145, "latitude": -22},
+          {"state_code": "NSW", "longitude": 147, "latitude": -32},
+          {"state_code": "VIC", "longitude": 145, "latitude": -36.5},
+          {"state_code": "TAS", "longitude": 146, "latitude": -42},
+          {"state_code": "ACT", "longitude": 149, "latitude": -34.7}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "color": "#FFFEFA",
+        "align": "center",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state_code",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    }
+  }
+}

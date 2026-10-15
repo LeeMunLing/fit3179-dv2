@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total recorded heritage grant funding by funding round, excluding GST.",
+  "data": {
+    "url": "../data/grants_by_round.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "funding": "number",
+        "round_order": "number"
+      }
+    }
+  },
+  "width": "container",
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 80
+    },
+    "strokeWidth": 3,
+    "color": "#23483D",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "grant_round",
+      "type": "ordinal",
+      "sort": {
+        "field": "round_order",
+        "order": "ascending"
+      },
+      "title": "Grant funding round",
+      "axis": {
+        "labelAngle": -45,
+        "labelLimit": 120
+      }
+    },
+    "y": {
+      "field": "funding",
+      "type": "quantitative",
+      "title": "Total grant funding (AUD)",
+      "scale": {
+        "zero": true,
+        "nice": false,
+        "domain": [0, 7000000]
+      },
+      "axis": {
+        "format": "$,.0f",
+        "values": [
+          0,
+          1000000,
+          2000000,
+          3000000,
+          4000000,
+          5000000,
+          6000000,
+          7000000
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "grant_round",
+        "type": "ordinal",
+        "title": "Funding round"
+      },
+      {
+        "field": "funding",
+        "type": "quantitative",
+        "title": "Total funding (AUD)",
+        "format": "$,.2f"
+      }
+    ]
+  },
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#E8E3D9",
+      "labelColor": "#4F514A",
+      "titleColor": "#23483D"
+    }
+  }
+}

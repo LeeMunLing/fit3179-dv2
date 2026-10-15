@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Australia's National Heritage Listings Over Time",
+  "data": {
+    "url": "../data/listings_by_year.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "width": "container",
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 55
+    },
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": "Year listed",
+      "axis": {
+        "format": "d",
+        "tickMinStep": 1
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Number of places listed",
+      "scale": {
+        "zero": true
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year"
+      },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Places listed"
+      }
+    ]
+  },
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#666A64",
+      "titleColor": "#23483D",
+      "gridColor": "#E2DCCF"
+    },
+    "line": {
+      "color": "#23483D",
+      "strokeWidth": 2
+    },
+    "point": {
+      "color": "#B85F45"
+    }
+  }
+}

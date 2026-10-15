@@ -1,0 +1,950 @@
+[
+  {
+    "id": "australia",
+    "parent": null,
+    "name": "Australia",
+    "value": 0
+  },
+  {
+    "id": "state|ACT",
+    "parent": "australia",
+    "name": "ACT",
+    "value": 0
+  },
+  {
+    "id": "state|EXT",
+    "parent": "australia",
+    "name": "EXT",
+    "value": 0
+  },
+  {
+    "id": "state|NSW",
+    "parent": "australia",
+    "name": "NSW",
+    "value": 0
+  },
+  {
+    "id": "state|NT",
+    "parent": "australia",
+    "name": "NT",
+    "value": 0
+  },
+  {
+    "id": "state|QLD",
+    "parent": "australia",
+    "name": "QLD",
+    "value": 0
+  },
+  {
+    "id": "state|SA",
+    "parent": "australia",
+    "name": "SA",
+    "value": 0
+  },
+  {
+    "id": "state|TAS",
+    "parent": "australia",
+    "name": "TAS",
+    "value": 0
+  },
+  {
+    "id": "state|VIC",
+    "parent": "australia",
+    "name": "VIC",
+    "value": 0
+  },
+  {
+    "id": "state|WA",
+    "parent": "australia",
+    "name": "WA",
+    "value": 0
+  },
+  {
+    "id": "site|ACT|105741",
+    "parent": "state|ACT",
+    "name": "Australian Academy of Science Building",
+    "value": 1
+  },
+  {
+    "id": "site|ACT|105745",
+    "parent": "state|ACT",
+    "name": "High Court - National Gallery Precinct",
+    "value": 1
+  },
+  {
+    "id": "site|ACT|105774",
+    "parent": "state|ACT",
+    "name": "Old Parliament House and Curtilage",
+    "value": 1
+  },
+  {
+    "id": "site|ACT|105889",
+    "parent": "state|ACT",
+    "name": "Australian War Memorial and the Memorial Parade",
+    "value": 1
+  },
+  {
+    "id": "site|ACT|105891",
+    "parent": "state|ACT",
+    "name": "Australian Alps National Parks and Reserves",
+    "value": 1
+  },
+  {
+    "id": "site|EXT|105707",
+    "parent": "state|EXT",
+    "name": "Heard and McDonald Islands",
+    "value": 1
+  },
+  {
+    "id": "site|EXT|105713",
+    "parent": "state|EXT",
+    "name": "Mawsons Huts and Mawsons Huts Historic Site",
+    "value": 1
+  },
+  {
+    "id": "site|EXT|105962",
+    "parent": "state|EXT",
+    "name": "Kingston and Arthurs Vale Historic Area",
+    "value": 1
+  },
+  {
+    "id": "site|EXT|106065",
+    "parent": "state|EXT",
+    "name": "HMAS Sydney II and HSK Kormoran Shipwreck Sites",
+    "value": 1
+  },
+  {
+    "id": "site|EXT|106080",
+    "parent": "state|EXT",
+    "name": "The Battle of the Coral Sea Site",
+    "value": 1
+  },
+  {
+    "id": "site|EXT|106108",
+    "parent": "state|EXT",
+    "name": "Christmas Island Natural Areas",
+    "value": 1
+  },
+  {
+    "id": "site|EXT|106167",
+    "parent": "state|EXT",
+    "name": "HMS Sirius Shipwreck",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105693",
+    "parent": "state|NSW",
+    "name": "Willandra Lakes Region",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105694",
+    "parent": "state|NSW",
+    "name": "Lord Howe Island Group",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105696",
+    "parent": "state|NSW",
+    "name": "The Greater Blue Mountains Area - Additional Values and Areas",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105704",
+    "parent": "state|NSW",
+    "name": "Gondwana Rainforests of Australia",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105738",
+    "parent": "state|NSW",
+    "name": "Sydney Opera House",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105748",
+    "parent": "state|NSW",
+    "name": "Bondi Surf Pavilion",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105759",
+    "parent": "state|NSW",
+    "name": "North Head - Sydney",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105761",
+    "parent": "state|NSW",
+    "name": "First Government House Site",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105778",
+    "parent": "state|NSW",
+    "name": "Brewarrina Aboriginal Fish Traps (Baiame's Ngunnhu)",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105812",
+    "parent": "state|NSW",
+    "name": "Kurnell Peninsula Headland",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105817",
+    "parent": "state|NSW",
+    "name": "Ku-ring-gai Chase National Park, Lion, Long and Spectacle Island Nature Reserves",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105853",
+    "parent": "state|NSW",
+    "name": "Warrumbungle National Park",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105861",
+    "parent": "state|NSW",
+    "name": "City of Broken Hill",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105869",
+    "parent": "state|NSW",
+    "name": "Myall Creek Massacre and Memorial Site",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105888",
+    "parent": "state|NSW",
+    "name": "Sydney Harbour Bridge",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105891",
+    "parent": "state|NSW",
+    "name": "Australian Alps National Parks and Reserves",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105893",
+    "parent": "state|NSW",
+    "name": "Royal National Park and Garawarra State Conservation Area",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105919",
+    "parent": "state|NSW",
+    "name": "Snowy Mountains Scheme",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105928",
+    "parent": "state|NSW",
+    "name": "Cockatoo Island",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105935",
+    "parent": "state|NSW",
+    "name": "Hyde Park Barracks",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105937",
+    "parent": "state|NSW",
+    "name": "Cyprus Hellene Club - Australian Hall",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105957",
+    "parent": "state|NSW",
+    "name": "Old Government House and the Government Domain",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105961",
+    "parent": "state|NSW",
+    "name": "Old Great North Road",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|105999",
+    "parent": "state|NSW",
+    "name": "The Greater Blue Mountains Area",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106009",
+    "parent": "state|NSW",
+    "name": "Bondi Beach",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106098",
+    "parent": "state|NSW",
+    "name": "Moree Baths and Swimming Pool",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106103",
+    "parent": "state|NSW",
+    "name": "Governors' Domain and Civic Precinct",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106153",
+    "parent": "state|NSW",
+    "name": "Centennial Park",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106162",
+    "parent": "state|NSW",
+    "name": "Kamay Botany Bay: botanical collection sites",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106234",
+    "parent": "state|NSW",
+    "name": "Parramatta Female Factory and Institutions Precinct",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106345",
+    "parent": "state|NSW",
+    "name": "Parkes Observatory",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106369",
+    "parent": "state|NSW",
+    "name": "Sydney Cultural Crescent Rock Art",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106399",
+    "parent": "state|NSW",
+    "name": "Sydney Gay and Lesbian Mardi Gras Parade Route",
+    "value": 1
+  },
+  {
+    "id": "site|NSW|106404",
+    "parent": "state|NSW",
+    "name": "Elizabeth Farm, Experiment Farm and Hambledon Cottage",
+    "value": 1
+  },
+  {
+    "id": "site|NT|105687",
+    "parent": "state|NT",
+    "name": "Uluru - Kata Tjuta National Park",
+    "value": 1
+  },
+  {
+    "id": "site|NT|105688",
+    "parent": "state|NT",
+    "name": "Kakadu National Park",
+    "value": 1
+  },
+  {
+    "id": "site|NT|105767",
+    "parent": "state|NT",
+    "name": "Hermannsburg Historic Precinct",
+    "value": 1
+  },
+  {
+    "id": "site|NT|105897",
+    "parent": "state|NT",
+    "name": "Wave Hill Walk Off Route",
+    "value": 1
+  },
+  {
+    "id": "site|NT|106043",
+    "parent": "state|NT",
+    "name": "West MacDonnell National Park",
+    "value": 1
+  },
+  {
+    "id": "site|NT|106088",
+    "parent": "state|NT",
+    "name": "Wurrwurrwuy",
+    "value": 1
+  },
+  {
+    "id": "site|NT|106180",
+    "parent": "state|NT",
+    "name": "Djirurri Rockshelter",
+    "value": 1
+  },
+  {
+    "id": "site|NT|106288",
+    "parent": "state|NT",
+    "name": "Watarrka National Park",
+    "value": 1
+  },
+  {
+    "id": "site|NT|106298",
+    "parent": "state|NT",
+    "name": "Greater Red Lily Lagoon Area",
+    "value": 1
+  },
+  {
+    "id": "site|NT|106310",
+    "parent": "state|NT",
+    "name": "Yalangbara",
+    "value": 1
+  },
+  {
+    "id": "site|NT|106376",
+    "parent": "state|NT",
+    "name": "Papunya",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105664",
+    "parent": "state|QLD",
+    "name": "Dinosaur Stampede National Monument",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105689",
+    "parent": "state|QLD",
+    "name": "Wet Tropics of Queensland",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105691",
+    "parent": "state|QLD",
+    "name": "Australian Fossil Mammal Sites (Riversleigh)",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105704",
+    "parent": "state|QLD",
+    "name": "Gondwana Rainforests of Australia",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105709",
+    "parent": "state|QLD",
+    "name": "Great Barrier Reef",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105721",
+    "parent": "state|QLD",
+    "name": "Tree of Knowledge and curtilage",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105815",
+    "parent": "state|QLD",
+    "name": "Glass House Mountains National Landscape",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105821",
+    "parent": "state|QLD",
+    "name": "Great Artesian Basin Springs: Elizabeth",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105941",
+    "parent": "state|QLD",
+    "name": "Murray Island Group, including Mer Island, Dauar Island, Waier Island",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105958",
+    "parent": "state|QLD",
+    "name": "Chillagoe Karst Region",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|105992",
+    "parent": "state|QLD",
+    "name": "K'gari",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|106008",
+    "parent": "state|QLD",
+    "name": "Wet Tropics World Heritage Area (Indigenous Values)",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|106025",
+    "parent": "state|QLD",
+    "name": "Ngarrabullgan",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|106061",
+    "parent": "state|QLD",
+    "name": "The Burke, Wills, King and Yandruwandha National Heritage Place",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|106064",
+    "parent": "state|QLD",
+    "name": "QANTAS Hangar Longreach",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|106262",
+    "parent": "state|QLD",
+    "name": "Quinkan Country",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|106366",
+    "parent": "state|QLD",
+    "name": "Mithaka Cultural Landscape",
+    "value": 1
+  },
+  {
+    "id": "site|QLD|106375",
+    "parent": "state|QLD",
+    "name": "Binthi Warra Indigenous Heritage Places",
+    "value": 1
+  },
+  {
+    "id": "site|SA|105692",
+    "parent": "state|SA",
+    "name": "Australian Fossil Mammal Sites (Naracoorte)",
+    "value": 1
+  },
+  {
+    "id": "site|SA|105710",
+    "parent": "state|SA",
+    "name": "South Australian Old and New Parliament Houses",
+    "value": 1
+  },
+  {
+    "id": "site|SA|105758",
+    "parent": "state|SA",
+    "name": "The Adelaide Park Lands and City Layout",
+    "value": 1
+  },
+  {
+    "id": "site|SA|105819",
+    "parent": "state|SA",
+    "name": "Great Artesian Basin Springs: Witjira-Dalhousie",
+    "value": 1
+  },
+  {
+    "id": "site|SA|105880",
+    "parent": "state|SA",
+    "name": "Ediacara Fossil Site - Nilpena",
+    "value": 1
+  },
+  {
+    "id": "site|SA|106022",
+    "parent": "state|SA",
+    "name": "Koonalda Cave",
+    "value": 1
+  },
+  {
+    "id": "site|SA|106061",
+    "parent": "state|SA",
+    "name": "The Burke, Wills, King and Yandruwandha National Heritage Place",
+    "value": 1
+  },
+  {
+    "id": "site|SA|106096",
+    "parent": "state|SA",
+    "name": "Australian Cornish Mining Sites: Moonta",
+    "value": 1
+  },
+  {
+    "id": "site|SA|106304",
+    "parent": "state|SA",
+    "name": "Australian Cornish Mining Sites: Burra",
+    "value": 1
+  },
+  {
+    "id": "site|SA|106353",
+    "parent": "state|SA",
+    "name": "Cuttlefish Coast Sanctuary Zone",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105665",
+    "parent": "state|TAS",
+    "name": "Recherche Bay (North East Peninsula) Area",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105695",
+    "parent": "state|TAS",
+    "name": "Tasmanian Wilderness",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105698",
+    "parent": "state|TAS",
+    "name": "Macquarie Island",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105718",
+    "parent": "state|TAS",
+    "name": "Port Arthur Historic Site",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105724",
+    "parent": "state|TAS",
+    "name": "Richmond Bridge",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105751",
+    "parent": "state|TAS",
+    "name": "Western Tasmania Aboriginal Cultural Landscape",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105931",
+    "parent": "state|TAS",
+    "name": "Coal Mines Historic Site",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105932",
+    "parent": "state|TAS",
+    "name": "Cascades Female Factory",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105933",
+    "parent": "state|TAS",
+    "name": "Darlington Probation Station",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105976",
+    "parent": "state|TAS",
+    "name": "Woolmers Estate",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|105977",
+    "parent": "state|TAS",
+    "name": "Brickendon Estate",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|106060",
+    "parent": "state|TAS",
+    "name": "Cascades Female Factory Yard 4 North",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|106168",
+    "parent": "state|TAS",
+    "name": "Jordan River Levee site",
+    "value": 1
+  },
+  {
+    "id": "site|TAS|106382",
+    "parent": "state|TAS",
+    "name": "The Nut and volcanic features of Stanley Peninsula",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105671",
+    "parent": "state|VIC",
+    "name": "Point Cook Air Base",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105673",
+    "parent": "state|VIC",
+    "name": "Budj Bim National Heritage Landscape - Mt Eccles Lake Condah Area",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105678",
+    "parent": "state|VIC",
+    "name": "Budj Bim National Heritage Landscape - Tyrendarra Area",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105680",
+    "parent": "state|VIC",
+    "name": "Point Nepean Defence Sites and Quarantine Station Area",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105683",
+    "parent": "state|VIC",
+    "name": "Castlemaine Diggings National Heritage Park",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105708",
+    "parent": "state|VIC",
+    "name": "Royal Exhibition Building National Historic Place",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105729",
+    "parent": "state|VIC",
+    "name": "Glenrowan Heritage Precinct",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105739",
+    "parent": "state|VIC",
+    "name": "Newman College",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105743",
+    "parent": "state|VIC",
+    "name": "Sidney Myer Music Bowl",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105747",
+    "parent": "state|VIC",
+    "name": "ICI Building (former)",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105754",
+    "parent": "state|VIC",
+    "name": "Eureka Stockade Gardens",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105756",
+    "parent": "state|VIC",
+    "name": "Quarantine Station and Surrounds",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105763",
+    "parent": "state|VIC",
+    "name": "Rippon Lea House and Garden",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105764",
+    "parent": "state|VIC",
+    "name": "HMVS Cerberus",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105777",
+    "parent": "state|VIC",
+    "name": "Echuca Wharf",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105845",
+    "parent": "state|VIC",
+    "name": "Bonegilla Migrant Camp - Block 19",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105851",
+    "parent": "state|VIC",
+    "name": "Flora Fossil Site - Yea",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105852",
+    "parent": "state|VIC",
+    "name": "Grampians National Park (Gariwerd)",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105875",
+    "parent": "state|VIC",
+    "name": "Great Ocean Road and Scenic Environs",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105885",
+    "parent": "state|VIC",
+    "name": "Melbourne Cricket Ground",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105891",
+    "parent": "state|VIC",
+    "name": "Australian Alps National Parks and Reserves",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105896",
+    "parent": "state|VIC",
+    "name": "High Court of Australia (former)",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105922",
+    "parent": "state|VIC",
+    "name": "Flemington Racecourse",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|105936",
+    "parent": "state|VIC",
+    "name": "Mount William Stone Hatchet Quarry",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106033",
+    "parent": "state|VIC",
+    "name": "Coranderrk",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106040",
+    "parent": "state|VIC",
+    "name": "Abbotsford Convent",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106149",
+    "parent": "state|VIC",
+    "name": "Murtoa No 1 Grain Store",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106277",
+    "parent": "state|VIC",
+    "name": "Queen Victoria Market",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106305",
+    "parent": "state|VIC",
+    "name": "Melbourne's Domain Parkland and Memorial Precinct",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106365",
+    "parent": "state|VIC",
+    "name": "Beechworth Administrative Precinct",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106370",
+    "parent": "state|VIC",
+    "name": "Victorian Trades Hall",
+    "value": 1
+  },
+  {
+    "id": "site|VIC|106384",
+    "parent": "state|VIC",
+    "name": "Ghow Swamp",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105686",
+    "parent": "state|WA",
+    "name": "Shark Bay, Western Australia",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105697",
+    "parent": "state|WA",
+    "name": "Purnululu National Park",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105727",
+    "parent": "state|WA",
+    "name": "Dampier Archipelago (including Burrup Peninsula)",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105762",
+    "parent": "state|WA",
+    "name": "Fremantle Prison (former)",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105808",
+    "parent": "state|WA",
+    "name": "Dirk Hartog Landing Site 1616 - Cape Inscription Area",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105818",
+    "parent": "state|WA",
+    "name": "Stirling Range National Park",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105881",
+    "parent": "state|WA",
+    "name": "The Ningaloo Coast",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105887",
+    "parent": "state|WA",
+    "name": "Batavia Shipwreck Site and Survivor Camps Area 1629 - Houtman Abrolhos",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105967",
+    "parent": "state|WA",
+    "name": "Lesueur National Park",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105974",
+    "parent": "state|WA",
+    "name": "Fitzgerald River National Park",
+    "value": 1
+  },
+  {
+    "id": "site|WA|105982",
+    "parent": "state|WA",
+    "name": "Porongurup National Park",
+    "value": 1
+  },
+  {
+    "id": "site|WA|106007",
+    "parent": "state|WA",
+    "name": "Goldfields Water Supply Scheme, Western Australia",
+    "value": 1
+  },
+  {
+    "id": "site|WA|106023",
+    "parent": "state|WA",
+    "name": "Cheetup Rock Shelter",
+    "value": 1
+  },
+  {
+    "id": "site|WA|106044",
+    "parent": "state|WA",
+    "name": "Wilgie Mia Aboriginal Ochre Mine",
+    "value": 1
+  },
+  {
+    "id": "site|WA|106063",
+    "parent": "state|WA",
+    "name": "The West Kimberley",
+    "value": 1
+  },
+  {
+    "id": "site|WA|106090",
+    "parent": "state|WA",
+    "name": "Erawondoo Hill",
+    "value": 1
+  },
+  {
+    "id": "site|WA|106372",
+    "parent": "state|WA",
+    "name": "North Pole Dome and Meentheena",
+    "value": 1
+  }
+]

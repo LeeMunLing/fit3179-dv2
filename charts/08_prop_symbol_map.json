@@ -1,0 +1,124 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 450,
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "../data/australian-states.json",
+        "format": {
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#F1F0EA",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "../data/heritage_points.json",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {"filter": "datum.properties.STATE !== 'EXT' && datum.properties.NAME !== 'Macquarie Island' && datum.properties.NAME !== 'Lord Howe Island Group' && datum.properties.NAME !== 'Murray Island Group, including Mer Island, Dauar Island, Waier Island'"},
+        {
+          "calculate": "datum.geometry.coordinates[0]",
+          "as": "longitude"
+        },
+        {
+          "calculate": "datum.geometry.coordinates[1]",
+          "as": "latitude"
+        },
+        {
+          "calculate": "datum.properties.AREA_HA",
+          "as": "area_ha"
+        },
+        {
+          "calculate": "datum.properties.NAME",
+          "as": "place_name"
+        },
+        {
+          "calculate": "datum.properties.STATE",
+          "as": "state"
+        },
+        {
+          "calculate": "datum.properties.CLASS",
+          "as": "heritage_class"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.65,
+        "stroke": "#FFFFFF",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "area_ha",
+          "type": "quantitative",
+          "scale": {
+            "type": "sqrt",
+            "range": [8, 800]
+          },
+          "legend": {
+            "title": "Site area (hectares)"
+          }
+        },
+        "color": {
+          "field": "heritage_class",
+          "type": "nominal",
+          "legend": {
+            "title": "Heritage class"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "place_name",
+            "type": "nominal",
+            "title": "Heritage place"
+          },
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "heritage_class",
+            "type": "nominal",
+            "title": "Heritage class"
+          },
+          {
+            "field": "area_ha",
+            "type": "quantitative",
+            "title": "Area (ha)",
+            "format": ",.2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    }
+  }
+}

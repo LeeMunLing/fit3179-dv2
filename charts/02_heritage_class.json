@@ -1,0 +1,58 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Composition of unique National Heritage List places by heritage class.",
+  "data": {
+    "url": "../data/listings_by_class.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "mark": {
+    "type": "arc",
+    "outerRadius": 120,
+    "stroke": "#FFFEFA",
+    "strokeWidth": 2,
+    "tooltip": true
+  },
+  "encoding": {
+    "theta": {
+      "field": "count",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "class",
+      "type": "nominal",
+      "title": "Heritage class",
+      "scale": {
+        "domain": ["Historic", "Indigenous", "Natural"],
+        "range": ["#B85F45", "#23483D", "#D8A756"]
+      },
+      "legend": {
+        "orient": "right",
+        "labelLimit": 150
+      }
+    },
+    "tooltip": [
+      {
+        "field": "class",
+        "type": "nominal",
+        "title": "Heritage class"
+      },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Number of places"
+      }
+    ]
+  },
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    }
+  }
+}

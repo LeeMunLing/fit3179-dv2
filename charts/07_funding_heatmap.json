@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 320,
+  "data": {
+    "url": "../data/funding_by_state_year.csv"
+  },
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Grant year",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "state",
+      "type": "ordinal",
+      "title": "State / territory",
+      "sort": ["WA", "NT", "SA", "QLD", "NSW", "ACT", "VIC", "TAS"]
+    },
+    "color": {
+      "field": "total_funding",
+      "type": "quantitative",
+      "title": "Total funding ($)",
+      "scale": {
+        "scheme": "greens"
+      },
+      "legend": {
+        "format": "$,.0f"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State / territory"
+      },
+      {
+        "field": "total_funding",
+        "type": "quantitative",
+        "title": "Total funding",
+        "format": "$,.0f"
+      },
+      {
+        "field": "grant_count",
+        "type": "quantitative",
+        "title": "Number of grants"
+      }
+    ]
+  },
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    }
+  }
+}

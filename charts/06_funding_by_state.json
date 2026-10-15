@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Total recorded heritage grant funding by individual state or territory, excluding the multi-state ACT/NSW/VIC record.",
+  "data": {
+    "url": "../data/funding_by_state.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.state !== 'ACT/NSW/VIC'"
+    }
+  ],
+  "width": "container",
+  "height": 300,
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "sort": {
+    "field": "funding",
+    "op": "sum",
+    "order": "descending"
+  },
+      "title": "State / territory"
+    },
+    "x": {
+      "field": "funding",
+      "type": "quantitative",
+      "title": "Recorded funding (AUD, including GST)",
+      "axis": {
+        "format": "$,.0f"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#A9B9AE",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "datum": 0
+        },
+        "x2": {
+          "field": "funding"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#23483D",
+        "size": 100,
+        "tooltip": true
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State or territory"
+          },
+          {
+            "field": "funding",
+            "type": "quantitative",
+            "title": "Recorded funding (AUD)",
+            "format": "$,.2f"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "background": "#FFFEFA",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "gridColor": "#E8E3D9",
+      "labelColor": "#4F514A",
+      "titleColor": "#23483D"
+    }
+  }
+}
