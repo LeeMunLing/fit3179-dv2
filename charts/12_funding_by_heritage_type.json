@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Recorded heritage grant funding grouped by inferred project type.",
   "data": {
-    "url": "../data/funding_by_heritage_type.csv",
+    "url": "data/funding_by_heritage_type.csv",
     "format": {
       "type": "csv"
     }
