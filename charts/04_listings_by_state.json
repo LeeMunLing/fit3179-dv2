@@ -29,7 +29,7 @@
           "lookup": "state_code",
           "from": {
             "data": {
-              "url": "../data/listings_by_state.csv",
+              "url": "data/listings_by_state.csv",
               "format": {
                 "type": "csv"
               }
