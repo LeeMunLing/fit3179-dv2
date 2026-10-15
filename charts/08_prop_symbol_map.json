@@ -9,7 +9,7 @@
   "layer": [
     {
       "data": {
-        "url": "../data/australian-states.json",
+        "url": "data/australian-states.json",
         "format": {
           "property": "features"
         }
