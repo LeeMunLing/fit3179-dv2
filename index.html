@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Australia's Heritage | Heritage Conservation</title>
+  <meta name="description" content="Explore Australia's National Heritage listings, protected places and recorded conservation grant funding.">
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -15,152 +17,264 @@
 </head>
 
 <body>
-    <!--
+  <!-- Navigation -->
   <header class="site-header">
-    <nav class="top-nav">
-      <a class="brand" href="#top">AUSTRALIA'S HERITAGE</a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <span class="brand-mark">A</span>
+        <span>AUSTRALIA'S HERITAGE</span>
+      </a>
+
       <div class="nav-links">
         <a href="#recognition">Recognition</a>
         <a href="#places">Protected places</a>
         <a href="#funding">Conservation funding</a>
-        <a href="#about">About the data</a>
+        <a href="#about">About</a>
       </div>
     </nav>
   </header>
--->
 
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker">PEOPLE · PLACES · PRESERVATION</p>
 
-<main id="top">
-  <section class="hero">
-    <h1>Heritage Conservation in Australia</h1>
-    <p class="eyebrow"><strong>Discover Australia's nationally recognised heritage places,
-  how listings have changed over time, and how conservation funding is distributed across heritage sites.</strong> </p>
-  </section>
-</main>
+        <h1>Heritage Conservation<br>in Australia</h1>
 
-    <section class="intro-strip">
-      <div>
-        <h2>From recognition to conservation.</h2>
+        <p class="hero-intro">
+          Discover Australia's nationally recognised heritage places,
+          how listings have changed over time, and how conservation
+          funding is distributed across heritage sites.
+        </p>
+
+        <div class="hero-bottom" aria-hidden="true">
+          <span>HERITAGE</span>
+          <span class="hero-line"></span>
+          <span>CONSERVATION</span>
+          <span class="hero-line"></span>
+          <span>AUSTRALIA</span>
+        </div>
       </div>
-      <p>
-        Heritage places can be nominated for their historical, cultural or
-    natural significance. Listing recognises their heritage value, while
-    government grants can help fund conservation work to preserve them
-    for future generations.
-      </p>
     </section>
 
+    <!-- Introduction: original wording retained -->
+    <section class="intro-strip">
+      <div class="intro-heading">
+        <span class="mini-label">THE STORY</span>
+        <h2>From recognition<br>to conservation.</h2>
+      </div>
+
+      <div class="intro-copy">
+        <p>
+          Heritage places can be nominated for their historical, cultural or
+          natural significance. Listing recognises their heritage value,
+          while government grants can help fund conservation work to preserve
+          them for future generations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Recognition -->
     <section id="recognition" class="content-section">
-      <p class="section-label"><strong>01 Heritage Recognition</strong></p>
+      <div class="section-heading">
+        <div>
+          <p class="section-label">01 / HERITAGE RECOGNITION</p>
+          <h2>What does Australia recognise?</h2>
+        </div>
+        <p class="section-side-note">
+          Listings, heritage classes<br>and recorded status
+        </p>
+      </div>
+
       <div class="chart-grid">
         <article class="chart-card chart-wide">
-          <h3>Australia's National Heritage Listings Over Time</h3>
-          <p class="chart-description">
-            Number of heritage places registered each year
-          </p>
+          <div class="chart-card-heading">
+            <span class="chart-index">01</span>
+            <div>
+              <h3>Australia's National Heritage Listings Over Time</h3>
+              <p class="chart-description">
+                Number of heritage places registered each year.
+              </p>
+            </div>
+          </div>
           <div id="chart-01" class="chart-container"></div>
         </article>
 
         <article class="chart-card">
-          <h3>What Types of Heritage Does Australia Recognise?</h3>
-          <p class="chart-description">Distribution of Listed National Heritage places by heritage class</p>
+          <div class="chart-card-heading">
+            <span class="chart-index">02</span>
+            <div>
+              <h3>What Types of Heritage Does Australia Recognise?</h3>
+              <p class="chart-description">
+                Distribution of listed National Heritage places by heritage class.
+              </p>
+            </div>
+          </div>
           <div id="chart-02" class="chart-container"></div>
         </article>
 
         <article class="chart-card">
-          <h3>Status of Australia's Heritage Places</h3>
-          <p class="chart-description">National Heritage places categorised as listed, nominated or within a listed place</p>
+          <div class="chart-card-heading">
+            <span class="chart-index">03</span>
+            <div>
+              <h3>Status of Australia's Heritage Places</h3>
+              <p class="chart-description">
+                Listed, nominated and other recorded listing statuses.
+              </p>
+            </div>
+          </div>
           <div id="chart-03" class="chart-container"></div>
-        </article> 
-            <!--
-      <article class="chart-card chart-wide">
-        <h3>How Has Heritage Recognition Changed by Class?</h3>
-        <p class="chart-description">
-          Compare heritage registrations across different classes between two years.
-        </p>
-        <div id="chart-11" class="chart-container"></div>
-      </article>
-    -->
+        </article>
       </div>
     </section>
 
-
+    <!-- Geographic distribution -->
     <section id="places" class="content-section section-alt">
-      <p class="section-label">02 Heritage Across Australia</p>
+      <div class="section-heading">
+        <div>
+          <p class="section-label">02 / HERITAGE ACROSS AUSTRALIA</p>
+          <h2>Heritage in place.</h2>
+        </div>
+        <p class="section-side-note">
+          From state-level patterns<br>to individual sites
+        </p>
+      </div>
 
       <div class="chart-grid">
         <article class="chart-card">
-          <h3>Where Are Australia's Heritage Places Concentrated?</h3>
-          <p class="chart-description">
-            Distribution of heritage places across Australian states and territories.
-          </p>
+          <div class="chart-card-heading">
+            <span class="chart-index">04</span>
+            <div>
+              <h3>Where Are Australia's Heritage Places Concentrated?</h3>
+              <p class="chart-description">
+                Distribution of heritage places across states and territories.
+              </p>
+            </div>
+          </div>
           <div id="chart-04" class="chart-container map-container"></div>
         </article>
 
         <article class="chart-card">
-          <h3>Where Are Australia's Heritage Places Located?</h3>
-          <p class="chart-description">
-            Circle size represents site area. Only locations in Mainland Australia are included.
-          </p>
+          <div class="chart-card-heading">
+            <span class="chart-index">08</span>
+            <div>
+              <h3>Where Are Australia's Heritage Places Located?</h3>
+              <p class="chart-description">
+                Circle size represents site area. Mainland locations only.
+              </p>
+            </div>
+          </div>
           <div id="chart-08" class="chart-container map-container"></div>
         </article>
       </div>
     </section>
 
-
+    <!-- Conservation funding -->
     <section id="funding" class="content-section">
-      <p class="section-label">03 Conservation Funding</p>
+      <div class="section-heading">
+        <div>
+          <p class="section-label">03 / CONSERVATION FUNDING</p>
+          <h2>Following the funding.</h2>
+        </div>
+        <p class="section-side-note">
+          Funding over time,<br>across places and projects
+        </p>
+      </div>
 
       <div class="chart-grid">
         <article class="chart-card chart-wide">
-          <h3>Heritage Grant Funding Over Time</h3>
-          <p class="chart-description">
-           Total recorded heritage grant funding by funding round.
-          </p>
+          <div class="chart-card-heading">
+            <span class="chart-index">05</span>
+            <div>
+              <h3>Heritage Grant Funding Over Time</h3>
+              <p class="chart-description">
+                Total recorded heritage grant funding by funding round.
+              </p>
+            </div>
+          </div>
           <div id="chart-05" class="chart-container"></div>
         </article>
 
         <article class="chart-card">
-          <h3>Which states receive grant support?</h3>
-          <p class="chart-description">Total grant funding by state and territory, excluding multi-state projects</p>
+          <div class="chart-card-heading">
+            <span class="chart-index">06</span>
+            <div>
+              <h3>Which States Receive Grant Support?</h3>
+              <p class="chart-description">
+                Recorded grant funding by state and territory, excluding multi-state projects.
+              </p>
+            </div>
+          </div>
           <div id="chart-06" class="chart-container"></div>
         </article>
 
         <article class="chart-card">
-          <h3>How Heritage Funding Varies by State and Year</h3>
-          <p class="chart-description">
-            Annual grant funding across Australian states and territories, 2018-2025
-          </p>
+          <div class="chart-card-heading">
+            <span class="chart-index">07</span>
+            <div>
+              <h3>How Funding Varies by State and Year</h3>
+              <p class="chart-description">
+                Annual grant funding across states and territories, 2018–2025.
+              </p>
+            </div>
+          </div>
           <div id="chart-07" class="chart-container"></div>
         </article>
 
         <article class="chart-card chart-wide">
-          <h3>What Types of Conservation Projects Receive the Most Funding?</h3>
-          <p class="chart-description">
-            Funding amounts and grant records by conservation project type.
-          </p>
+          <div class="chart-card-heading">
+            <span class="chart-index">12</span>
+            <div>
+              <h3>What Types of Conservation Projects Receive Funding?</h3>
+              <p class="chart-description">
+                Recorded funding amounts and grant records by project type.
+              </p>
+            </div>
+          </div>
           <div id="chart-12" class="chart-container"></div>
         </article>
 
-        <article class="chart-card chart-wide">
-          <h3>Which Heritage Sites Receive Conservation Funding?</h3>
-          <p class="chart-description">
-            Heritage sites across Australia coloured according to its total conservation funding
-          </p>
+        <article class="chart-card chart-wide funding-map-card">
+          <div class="chart-card-heading">
+            <span class="chart-index">09</span>
+            <div>
+              <h3>Which Heritage Sites Receive Conservation Funding?</h3>
+              <p class="chart-description">
+                Explore mapped heritage sites and their matched grant funding.
+              </p>
+            </div>
+          </div>
+
           <div id="chart-09" class="chart-container map-container"></div>
         </article>
       </div>
     </section>
 
-  <!--
-    <section class="conclusion-section">
-      <p class="eyebrow">WHAT THE DATA CAN TELL US</p>
-      <p>
-        FIT3179
-      </p>
-    </section>
-    -->
 
+<!-- Footer -->
+<footer class="site-footer">
+
+  <div class="footer-sources">
+    <h3>Data Sources</h3>
+
+    <div class="source-item">
+      <p class="source-name">Australia's National Heritage Places</p>
+      <a href="https://publicdata.au/d/au-national-heritage-list-places/"
+         target="_blank" rel="noopener noreferrer">
+        https://publicdata.au/d/au-national-heritage-list-places/
+      </a>
+    </div>
+
+    <div class="source-item">
+      <p class="source-name">Australian Heritage Grants</p>
+      <a href="https://www.dcceew.gov.au/parks-heritage/heritage/grants-and-funding/australian-heritage-grants#program-years"
+         target="_blank" rel="noopener noreferrer">
+        https://www.dcceew.gov.au/parks-heritage/heritage/grants-and-funding/australian-heritage-grants#program-years
+      </a>
+    </div>
+  </div>
+</footer>
 
   <script src="js/main.js"></script>
 </body>
