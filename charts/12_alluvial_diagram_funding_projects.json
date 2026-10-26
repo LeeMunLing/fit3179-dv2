@@ -1,0 +1,15 @@
+{
+  "type": "alluvial",
+  "description": "Alluvial diagram showing how heritage grant funding flows from funding rounds to states and territories, then to inferred conservation project types.",
+  "data": {
+    "url": "data/funding_alluvial_links.csv",
+    "format": "csv"
+  },
+  "encoding": {
+    "flowWidth": "value",
+    "leftNodes": "source_label",
+    "middleNodes": "state labels",
+    "rightNodes": "target_label",
+    "colour": "state"
+  }
+}

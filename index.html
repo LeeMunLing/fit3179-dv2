@@ -16,6 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3"></script>
+  <script src="js/alluvial.js"></script>
 </head>
 
 <body>
@@ -45,9 +46,7 @@
         <h1>Heritage Conservation<br>in Australia</h1>
 
         <p class="hero-intro">
-          Discover Australia's nationally recognised heritage places,
-          how listings have changed over time, and how conservation
-          funding is distributed across heritage sites.
+          Explore Australia's heritage places, listing trends, and conservation funding
         </p>
 
         <div class="hero-bottom" aria-hidden="true">
@@ -63,7 +62,7 @@
     <!-- Introduction: original wording retained -->
     <section class="intro-strip">
       <div class="intro-heading">
-        <span class="mini-label">THE STORY</span>
+        <p class="section-label">01 / INTRODUCTION</p>
         <h2>From recognition<br>to conservation.</h2>
       </div>
 
@@ -81,12 +80,9 @@
     <section id="recognition" class="content-section">
       <div class="section-heading">
         <div>
-          <p class="section-label">01 / HERITAGE RECOGNITION</p>
+          <p class="section-label">02 / HERITAGE RECOGNITION</p>
           <h2>What does Australia recognise?</h2>
         </div>
-        <p class="section-side-note">
-          Listings, heritage classes<br>and recorded status
-        </p>
       </div>
 
       <div class="chart-grid">
@@ -114,6 +110,9 @@
             </div>
           </div>
           <div id="chart-02" class="chart-container"></div>
+          <div class="chart-insight" aria-label="Chart insight">
+            <p>Historic places are the largest heritage class, representing 56% of the total.</p>
+          </div>
         </article>
 
         <article class="chart-card">
@@ -122,11 +121,14 @@
             <div>
               <h3>Status of Australia's Heritage Places</h3>
               <p class="chart-description">
-                Listed, nominated and other recorded listing statuses.
+                Distribution of National Heritage places by recognition status.
               </p>
             </div>
           </div>
           <div id="chart-03" class="chart-container"></div>
+          <div class="chart-insight" aria-label="Chart insight">
+            <p>Listed places has the largest disrtibution, making up 88% of recorded statuses.</p>
+          </div>
         </article>
 
         <article class="chart-card chart-wide">
@@ -135,11 +137,14 @@
             <div>
               <h3>How Heritage Listings Have Changed Across Australian States</h3>
               <p class="chart-description">
-                Cumulative number of formally listed heritage places in 2010 and 2026. Lines show whether each state or territory increased or stayed the same.
+                Number of listed heritage places across Australian states and territories in 2010 and 2026.
               </p>
             </div>
           </div>
           <div id="chart-10" class="chart-container"></div>
+          <div class="chart-insight" aria-label="Chart insight">
+            <p>NSW and Victoria recorded the largest increases.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -148,12 +153,9 @@
     <section id="places" class="content-section section-alt">
       <div class="section-heading">
         <div>
-          <p class="section-label">02 / HERITAGE ACROSS AUSTRALIA</p>
+          <p class="section-label">03 / HERITAGE PLACES ACROSS AUSTRALIA</p>
           <h2>Heritage in place.</h2>
         </div>
-        <p class="section-side-note">
-          From state-level patterns<br>to individual sites
-        </p>
       </div>
 
       <div class="chart-grid">
@@ -174,9 +176,9 @@
           <div class="chart-card-heading">
             <span class="chart-index">06</span>
             <div>
-              <h3>Which Heritage Classes Are Found Where?</h3>
+              <h3>Where Australia's Heritage Classes Are Located</h3>
               <p class="chart-description">
-                Each equally sized dot represents a heritage site; colour shows its heritage class.
+                Each dot represents a heritage site, with colour showing its class.
               </p>
             </div>
           </div>
@@ -189,7 +191,7 @@
             <div>
               <h3>How Large Are Australia's Heritage Places?</h3>
               <p class="chart-description">
-                Circle size represents site area in hectares; all circles use one colour.
+                Circle size represents site area in hectares
               </p>
             </div>
           </div>
@@ -202,12 +204,9 @@
     <section id="funding" class="content-section">
       <div class="section-heading">
         <div>
-          <p class="section-label">03 / CONSERVATION FUNDING</p>
+          <p class="section-label">04 / CONSERVATION FUNDING</p>
           <h2>Following the funding.</h2>
         </div>
-        <p class="section-side-note">
-          Funding over time,<br>across places and projects
-        </p>
       </div>
 
       <div class="chart-grid">
@@ -254,9 +253,9 @@
           <div class="chart-card-heading">
             <span class="chart-index">11</span>
             <div>
-              <h3>Does Grant Funding Reflect Heritage Listing Concentration?</h3>
+              <h3>Do States with More Heritage Places Receive More Funding?</h3>
               <p class="chart-description">
-                Compare the number of listed National Heritage places with recorded grant funding by state and territory.
+                Comparing the relationship between the number of listed heritage places and the amount of conservation grant funding received across Australian states and territories.
               </p>
             </div>
           </div>
@@ -273,7 +272,7 @@
             <div>
               <h3>What Types of Conservation Projects Receive Funding?</h3>
               <p class="chart-description">
-                Grant funding flows from funding round to state or territory and then to an inferred conservation project type.
+                How grant funding is distributed across states and territories and different types of conservation projects.
               </p>
             </div>
           </div>
@@ -300,25 +299,45 @@
 
 <!-- Footer -->
 <footer class="site-footer">
+  <div class="footer-info">
+    <h3>FIT3179 Data Visualisation 2</h3>
+    <p><strong>Name:</strong> Lee Mun Ling</p>
+    <p><strong>Date:</strong> 27 October 2026</p>
+  </div>
+
+  <div class="footer-ai">
+    <h3>AI Acknowledgement</h3>
+    <p>
+      Generative AI tools were used to assist with generating charts, code debugging,
+      technical guidance, and refinement of written content.
+      All visualisations, data processing, and final outputs were
+      reviewed and verified by the author.
+    </p>
+  </div>
 
   <div class="footer-sources">
     <h3>Data Sources</h3>
 
     <div class="source-item">
-      <p class="source-name">Australia's National Heritage Places</p>
-      <a href="https://publicdata.au/d/au-national-heritage-list-places/"
-         target="_blank" rel="noopener noreferrer">
-        https://publicdata.au/d/au-national-heritage-list-places/
-      </a>
+      <p class="source-name">National Heritage List places, boundaries, Australia</p>
+      <p>https://publicdata.au/d/au-national-heritage-list-places/</p>
     </div>
 
     <div class="source-item">
       <p class="source-name">Australian Heritage Grants</p>
-      <a href="https://www.dcceew.gov.au/parks-heritage/heritage/grants-and-funding/australian-heritage-grants#program-years"
-         target="_blank" rel="noopener noreferrer">
-        https://www.dcceew.gov.au/parks-heritage/heritage/grants-and-funding/australian-heritage-grants#program-years
-      </a>
+      <p>https://www.dcceew.gov.au/parks-heritage/heritage/grants-and-funding/australian-heritage-grants#program-years</p>
     </div>
+
+      <div class="source-item">
+      <p class="source-name">Heritage Places geoJSON Data</p>
+      <p>https://gis.environment.gov.au/gispubmap/rest/services/ogc_services/National_Heritage_List/FeatureServer/0</p>
+    </div>
+
+        <div class="source-item">
+      <p class="source-name">Australian States geoJSON Data</p>
+      <p>https://github.com/anthwri/GeoJson-Data</p>
+    </div>
+  </div>
   </div>
 </footer>
 

@@ -60,7 +60,7 @@
         "color": {
           "field": "count",
           "type": "quantitative",
-          "title": "Heritage places listed by selected year",
+          "title": "Heritage places",
           "scale": {
             "scheme": "greens"
           }
@@ -74,7 +74,7 @@
           {
             "field": "count",
             "type": "quantitative",
-            "title": "Heritage places listed by selected year"
+            "title": "Heritage places"
           }
         ]
       }

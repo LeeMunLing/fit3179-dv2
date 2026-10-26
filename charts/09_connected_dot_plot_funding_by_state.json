@@ -28,7 +28,7 @@
     "x": {
       "field": "funding",
       "type": "quantitative",
-      "title": "Recorded funding (AUD, including GST)",
+      "title": "Recorded funding (AUD)",
       "axis": {
         "format": "$,.0f"
       }
