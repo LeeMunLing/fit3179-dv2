@@ -4,6 +4,19 @@
   "description": "Geographic distribution of National Heritage List places by Australian state and territory.",
   "width": 550,
   "height": 420,
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2026,
+      "bind": {
+        "input": "range",
+        "min": 2004,
+        "max": 2026,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
   "projection": {
     "type": "mercator"
   },
@@ -26,15 +39,14 @@
           "as": "state_code"
         },
         {
-          "lookup": "state_code",
+          "calculate": "datum.state_code + '_' + selectedYear",
+          "as": "state_year"
+        },
+        {
+          "lookup": "state_year",
           "from": {
-            "data": {
-              "url": "data/listings_by_state.csv",
-              "format": {
-                "type": "csv"
-              }
-            },
-            "key": "state",
+            "data": {"values": []},
+            "key": "state_year",
             "fields": ["count"]
           }
         }
@@ -48,7 +60,7 @@
         "color": {
           "field": "count",
           "type": "quantitative",
-          "title": "Heritage places",
+          "title": "Heritage places listed by selected year",
           "scale": {
             "scheme": "greens"
           }
@@ -62,7 +74,7 @@
           {
             "field": "count",
             "type": "quantitative",
-            "title": "Heritage places"
+            "title": "Heritage places listed by selected year"
           }
         ]
       }

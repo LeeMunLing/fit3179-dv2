@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Relationship between listed National Heritage places and recorded grant funding by state and territory.",
+  "data": {
+    "values": [
+      {"state": "ACT", "listed_places": 5, "funding": 256669, "grant_records": 1},
+      {"state": "NSW", "listed_places": 34, "funding": 5104981, "grant_records": 22},
+      {"state": "NT", "listed_places": 11, "funding": 779515, "grant_records": 2},
+      {"state": "QLD", "listed_places": 18, "funding": 5459235, "grant_records": 20},
+      {"state": "SA", "listed_places": 10, "funding": 3610682, "grant_records": 13},
+      {"state": "TAS", "listed_places": 14, "funding": 4091599, "grant_records": 12},
+      {"state": "VIC", "listed_places": 32, "funding": 7135696, "grant_records": 33},
+      {"state": "WA", "listed_places": 17, "funding": 8441727, "grant_records": 32}
+    ]
+  },
+  "width": "container",
+  "height": 330,
+  "layer": [
+    {
+      "mark": {"type": "point", "filled": true, "size": 150, "opacity": 0.9, "stroke": "#FFFEFA", "strokeWidth": 1.5},
+      "encoding": {
+        "x": {"field": "listed_places", "type": "quantitative", "title": "Listed National Heritage places", "scale": {"zero": true}, "axis": {"tickCount": 6}},
+        "y": {"field": "funding", "type": "quantitative", "title": "Recorded grant funding (AUD)", "scale": {"zero": true}, "axis": {"format": "$,.0f", "tickCount": 5}},
+        "color": {
+          "field": "state", "type": "nominal", "title": "State / territory",
+          "legend": null,
+          "scale": {
+            "domain": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"],
+            "range": ["#5B6770", "#2F6B8F", "#C2643F", "#4F8A63", "#B28A3E", "#6E5B95", "#A14F6B", "#3C7A78"]
+          }
+        },
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State / territory"},
+          {"field": "listed_places", "type": "quantitative", "title": "Listed places"},
+          {"field": "funding", "type": "quantitative", "title": "Recorded funding (AUD)", "format": "$,.0f"},
+          {"field": "grant_records", "type": "quantitative", "title": "Grant records"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": -12, "fontSize": 11, "fontWeight": "bold", "color": "#23483D"},
+      "encoding": {
+        "x": {"field": "listed_places", "type": "quantitative"},
+        "y": {"field": "funding", "type": "quantitative"},
+        "text": {"field": "state", "type": "nominal"}
+      }
+    }
+  ],
+  "config": {
+    "background": "#FFFEFA",
+    "view": {"stroke": null},
+    "axis": {"gridColor": "#E8E3D9", "labelColor": "#4F514A", "titleColor": "#23483D"},
+    "legend": {"labelColor": "#4F514A", "titleColor": "#23483D"}
+  }
+}

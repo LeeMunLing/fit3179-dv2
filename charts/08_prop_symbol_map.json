@@ -85,6 +85,10 @@
         "color": {
           "field": "heritage_class",
           "type": "nominal",
+          "scale": {
+            "domain": ["Historic", "Indigenous", "Natural"],
+            "range": ["#D8A756", "#B85F45", "#23483D"]
+          },
           "legend": {
             "title": "Heritage class"
           }

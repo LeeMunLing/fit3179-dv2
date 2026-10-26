@@ -1,0 +1,100 @@
+source,target,value,link_type,source_label,target_label
+round|2018-19,state|Multiple states,150000,round-to-state,2018-19,Multiple states
+round|2018-19,state|NSW,920000,round-to-state,2018-19,NSW
+round|2018-19,state|QLD,503840,round-to-state,2018-19,QLD
+round|2018-19,state|SA,738000,round-to-state,2018-19,SA
+round|2018-19,state|TAS,1080600,round-to-state,2018-19,TAS
+round|2018-19,state|VIC,235932,round-to-state,2018-19,VIC
+round|2018-19,state|WA,2886592,round-to-state,2018-19,WA
+round|2019-20,state|ACT,238500,round-to-state,2019-20,ACT
+round|2019-20,state|NSW,1212660,round-to-state,2019-20,NSW
+round|2019-20,state|NT,339515,round-to-state,2019-20,NT
+round|2019-20,state|QLD,1424171,round-to-state,2019-20,QLD
+round|2019-20,state|SA,786100,round-to-state,2019-20,SA
+round|2019-20,state|TAS,288000,round-to-state,2019-20,TAS
+round|2019-20,state|VIC,1029887,round-to-state,2019-20,VIC
+round|2019-20,state|WA,1162340,round-to-state,2019-20,WA
+round|2020-21,state|NSW,471384,round-to-state,2020-21,NSW
+round|2020-21,state|QLD,584800,round-to-state,2020-21,QLD
+round|2020-21,state|SA,333869,round-to-state,2020-21,SA
+round|2020-21,state|TAS,810280,round-to-state,2020-21,TAS
+round|2020-21,state|VIC,1719248,round-to-state,2020-21,VIC
+round|2020-21,state|WA,2127182,round-to-state,2020-21,WA
+round|2021-22,state|ACT/NSW/VIC,217912,round-to-state,2021-22,ACT/NSW/VIC
+round|2021-22,state|NSW,841444,round-to-state,2021-22,NSW
+round|2021-22,state|QLD,1459601,round-to-state,2021-22,QLD
+round|2021-22,state|SA,1090320,round-to-state,2021-22,SA
+round|2021-22,state|TAS,842447,round-to-state,2021-22,TAS
+round|2021-22,state|VIC,705025,round-to-state,2021-22,VIC
+round|2021-22,state|WA,1210982,round-to-state,2021-22,WA
+round|2022-23,state|ACT,256669,round-to-state,2022-23,ACT
+round|2022-23,state|NSW,886950,round-to-state,2022-23,NSW
+round|2022-23,state|QLD,1136899,round-to-state,2022-23,QLD
+round|2022-23,state|SA,803000,round-to-state,2022-23,SA
+round|2022-23,state|TAS,427916,round-to-state,2022-23,TAS
+round|2022-23,state|VIC,2065626,round-to-state,2022-23,VIC
+round|2022-23,state|WA,499646,round-to-state,2022-23,WA
+round|2023-24,state|NSW,471933,round-to-state,2023-24,NSW
+round|2023-24,state|QLD,429488,round-to-state,2023-24,QLD
+round|2023-24,state|SA,880000,round-to-state,2023-24,SA
+round|2023-24,state|TAS,690956,round-to-state,2023-24,TAS
+round|2023-24,state|VIC,549876,round-to-state,2023-24,VIC
+round|2023-24,state|WA,1429885,round-to-state,2023-24,WA
+round|2024-25,state|NSW,1249800,round-to-state,2024-25,NSW
+round|2024-25,state|QLD,162030,round-to-state,2024-25,QLD
+round|2024-25,state|SA,592000,round-to-state,2024-25,SA
+round|2024-25,state|TAS,1280000,round-to-state,2024-25,TAS
+round|2024-25,state|VIC,941640,round-to-state,2024-25,VIC
+round|2024-25,state|WA,880000,round-to-state,2024-25,WA
+round|2025-26,state|NSW,1019810,round-to-state,2025-26,NSW
+round|2025-26,state|NT,440000,round-to-state,2025-26,NT
+round|2025-26,state|QLD,512387,round-to-state,2025-26,QLD
+round|2025-26,state|SA,183393,round-to-state,2025-26,SA
+round|2025-26,state|TAS,399980,round-to-state,2025-26,TAS
+round|2025-26,state|VIC,2259451,round-to-state,2025-26,VIC
+round|2025-26,state|WA,656631,round-to-state,2025-26,WA
+state|ACT/NSW/VIC,type|Interpretation and education,217912,state-to-type,ACT/NSW/VIC,Interpretation and education
+state|ACT,type|Access and visitor infrastructure,256669,state-to-type,ACT,Access and visitor infrastructure
+state|ACT,type|Environmental conservation,238500,state-to-type,ACT,Environmental conservation
+state|Multiple states,type|Interpretation and education,150000,state-to-type,Multiple states,Interpretation and education
+state|NSW,type|Access and visitor infrastructure,314600,state-to-type,NSW,Access and visitor infrastructure
+state|NSW,type|Conservation planning and management,543117,state-to-type,NSW,Conservation planning and management
+state|NSW,type|Environmental conservation,1038200,state-to-type,NSW,Environmental conservation
+state|NSW,type|Indigenous cultural heritage,2445374,state-to-type,NSW,Indigenous cultural heritage
+state|NSW,type|Research and documentation,144044,state-to-type,NSW,Research and documentation
+state|NSW,type|Restoration and repair,2588646,state-to-type,NSW,Restoration and repair
+state|NT,type|Indigenous cultural heritage,779515,state-to-type,NT,Indigenous cultural heritage
+state|QLD,type|Access and visitor infrastructure,184800,state-to-type,QLD,Access and visitor infrastructure
+state|QLD,type|Conservation planning and management,2051140,state-to-type,QLD,Conservation planning and management
+state|QLD,type|Environmental conservation,578385,state-to-type,QLD,Environmental conservation
+state|QLD,type|Indigenous cultural heritage,2690319,state-to-type,QLD,Indigenous cultural heritage
+state|QLD,type|Interpretation and education,373243,state-to-type,QLD,Interpretation and education
+state|QLD,type|Restoration and repair,335329,state-to-type,QLD,Restoration and repair
+state|SA,type|Access and visitor infrastructure,1010000,state-to-type,SA,Access and visitor infrastructure
+state|SA,type|Conservation planning and management,1157113,state-to-type,SA,Conservation planning and management
+state|SA,type|Environmental conservation,629869,state-to-type,SA,Environmental conservation
+state|SA,type|Indigenous cultural heritage,1336700,state-to-type,SA,Indigenous cultural heritage
+state|SA,type|Interpretation and education,297000,state-to-type,SA,Interpretation and education
+state|SA,type|Restoration and repair,976000,state-to-type,SA,Restoration and repair
+state|TAS,type|Access and visitor infrastructure,440000,state-to-type,TAS,Access and visitor infrastructure
+state|TAS,type|Conservation planning and management,1069980,state-to-type,TAS,Conservation planning and management
+state|TAS,type|Environmental conservation,1505716,state-to-type,TAS,Environmental conservation
+state|TAS,type|Indigenous cultural heritage,325813,state-to-type,TAS,Indigenous cultural heritage
+state|TAS,type|Research and documentation,628314,state-to-type,TAS,Research and documentation
+state|TAS,type|Restoration and repair,1850356,state-to-type,TAS,Restoration and repair
+state|VIC,type|Access and visitor infrastructure,1450316,state-to-type,VIC,Access and visitor infrastructure
+state|VIC,type|Conservation planning and management,1186865,state-to-type,VIC,Conservation planning and management
+state|VIC,type|Environmental conservation,464518,state-to-type,VIC,Environmental conservation
+state|VIC,type|Indigenous cultural heritage,1690835,state-to-type,VIC,Indigenous cultural heritage
+state|VIC,type|Interpretation and education,734593,state-to-type,VIC,Interpretation and education
+state|VIC,type|Research and documentation,88000,state-to-type,VIC,Research and documentation
+state|VIC,type|Restoration and repair,3824458,state-to-type,VIC,Restoration and repair
+state|VIC,type|Site conservation and care,67100,state-to-type,VIC,Site conservation and care
+state|WA,type|Access and visitor infrastructure,1151800,state-to-type,WA,Access and visitor infrastructure
+state|WA,type|Conservation planning and management,1543290,state-to-type,WA,Conservation planning and management
+state|WA,type|Environmental conservation,1183371,state-to-type,WA,Environmental conservation
+state|WA,type|Indigenous cultural heritage,4940701,state-to-type,WA,Indigenous cultural heritage
+state|WA,type|Interpretation and education,422735,state-to-type,WA,Interpretation and education
+state|WA,type|Research and documentation,79199,state-to-type,WA,Research and documentation
+state|WA,type|Restoration and repair,1346730,state-to-type,WA,Restoration and repair
+state|WA,type|Site conservation and care,185432,state-to-type,WA,Site conservation and care

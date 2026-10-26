@@ -25,15 +25,27 @@
       "sort": ["WA", "NT", "SA", "QLD", "NSW", "ACT", "VIC", "TAS"]
     },
     "color": {
+      "condition": {
+        "test": "!isValid(datum.total_funding) || datum.total_funding == 0",
+        "value": "#F0F5F1"
+      },
       "field": "total_funding",
       "type": "quantitative",
       "title": "Total funding ($)",
       "scale": {
-        "scheme": "greens"
+        "domain": [0, 3500000],
+        "range": ["#B5D0C2", "#8CB6A6", "#5C967D", "#3F806A", "#23483D"]
       },
       "legend": {
         "format": "$,.0f"
       }
+    },
+    "opacity": {
+      "condition": {
+        "test": "datum.total_funding == 0",
+        "value": 1
+      },
+      "value": 1
     },
     "tooltip": [
       {

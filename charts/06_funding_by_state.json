@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Total recorded heritage grant funding by individual state or territory, excluding the multi-state ACT/NSW/VIC record.",
+  "description": "Total recorded heritage grant funding by individual state or territory, excluding multi-state projects and External Territories.",
   "data": {
     "url": "data/funding_by_state.csv",
     "format": {

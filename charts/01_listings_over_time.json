@@ -9,45 +9,60 @@
   },
   "width": "container",
   "height": 300,
-  "mark": {
-    "type": "line",
-    "point": {
-      "filled": true,
-      "size": 55
-    },
-    "tooltip": true
-  },
-  "encoding": {
-    "x": {
-      "field": "year",
-      "type": "quantitative",
-      "title": "Year listed",
-      "axis": {
-        "format": "d",
-        "tickMinStep": 1
-      }
-    },
-    "y": {
-      "field": "count",
-      "type": "quantitative",
-      "title": "Number of places listed",
-      "scale": {
-        "zero": true
-      }
-    },
-    "tooltip": [
-      {
-        "field": "year",
-        "type": "quantitative",
-        "title": "Year"
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": true,
+          "size": 55
+        },
+        "tooltip": true
       },
-      {
-        "field": "count",
-        "type": "quantitative",
-        "title": "Places listed"
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "title": "Year listed",
+          "axis": {
+            "format": "d",
+            "tickMinStep": 1
+          }
+        },
+        "y": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Number of places listed",
+          "scale": {
+            "zero": true
+          }
+        },
+        "tooltip": [
+          { "field": "year", "type": "quantitative", "title": "Year" },
+          { "field": "count", "type": "quantitative", "title": "Places listed" }
+        ]
       }
-    ]
-  },
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": { "type": "rect", "color": "#B85F45", "opacity": 0.12 },
+      "encoding": {
+        "x": { "datum": 2006.5, "type": "quantitative" },
+        "x2": { "datum": 2007.5 },
+        "y": { "datum": 0, "type": "quantitative" },
+        "y2": { "datum": 40 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": { "type": "text", "align": "left", "dx": 6, "dy": -4, "fontSize": 12, "fontWeight": "bold", "color": "#B85F45" },
+      "encoding": {
+        "x": { "datum": 2007, "type": "quantitative" },
+        "y": { "datum": 38, "type": "quantitative" },
+        "text": { "value": "Heritage listings surged to 36 places in 2007 before falling sharply in 2008." }
+      }
+    }
+  ],
   "config": {
     "background": "#FFFEFA",
     "view": {

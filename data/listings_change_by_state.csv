@@ -1,0 +1,17 @@
+state,state_name,year,count
+ACT,Australian Capital Territory,2010,5
+ACT,Australian Capital Territory,2026,5
+NSW,New South Wales,2010,21
+NSW,New South Wales,2026,30
+NT,Northern Territory,2010,4
+NT,Northern Territory,2026,6
+QLD,Queensland,2010,10
+QLD,Queensland,2026,14
+SA,South Australia,2010,5
+SA,South Australia,2026,10
+TAS,Tasmania,2010,11
+TAS,Tasmania,2026,13
+VIC,Victoria,2010,22
+VIC,Victoria,2026,30
+WA,Western Australia,2010,10
+WA,Western Australia,2026,16

@@ -29,7 +29,7 @@
       "title": "Heritage class",
       "scale": {
         "domain": ["Historic", "Indigenous", "Natural"],
-        "range": ["#B85F45", "#23483D", "#D8A756"]
+        "range": ["#D8A756", "#B85F45", "#23483D"]
       },
       "legend": {
         "orient": "right",

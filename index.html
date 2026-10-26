@@ -14,6 +14,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3"></script>
 </head>
 
 <body>
@@ -126,6 +128,19 @@
           </div>
           <div id="chart-03" class="chart-container"></div>
         </article>
+
+        <article class="chart-card chart-wide">
+          <div class="chart-card-heading">
+            <span class="chart-index">04</span>
+            <div>
+              <h3>How Heritage Listings Have Changed Across Australian States</h3>
+              <p class="chart-description">
+                Cumulative number of formally listed heritage places in 2010 and 2026. Lines show whether each state or territory increased or stayed the same.
+              </p>
+            </div>
+          </div>
+          <div id="chart-10" class="chart-container"></div>
+        </article>
       </div>
     </section>
 
@@ -142,9 +157,9 @@
       </div>
 
       <div class="chart-grid">
-        <article class="chart-card">
+        <article class="chart-card chart-wide">
           <div class="chart-card-heading">
-            <span class="chart-index">04</span>
+            <span class="chart-index">05</span>
             <div>
               <h3>Where Are Australia's Heritage Places Concentrated?</h3>
               <p class="chart-description">
@@ -157,15 +172,28 @@
 
         <article class="chart-card">
           <div class="chart-card-heading">
-            <span class="chart-index">08</span>
+            <span class="chart-index">06</span>
             <div>
-              <h3>Where Are Australia's Heritage Places Located?</h3>
+              <h3>Which Heritage Classes Are Found Where?</h3>
               <p class="chart-description">
-                Circle size represents site area. Mainland locations only.
+                Each equally sized dot represents a heritage site; colour shows its heritage class.
               </p>
             </div>
           </div>
-          <div id="chart-08" class="chart-container map-container"></div>
+          <div id="chart-14" class="chart-container map-container"></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-card-heading">
+            <span class="chart-index">07</span>
+            <div>
+              <h3>How Large Are Australia's Heritage Places?</h3>
+              <p class="chart-description">
+                Circle size represents site area in hectares; all circles use one colour.
+              </p>
+            </div>
+          </div>
+          <div id="chart-15" class="chart-container map-container"></div>
         </article>
       </div>
     </section>
@@ -185,7 +213,7 @@
       <div class="chart-grid">
         <article class="chart-card chart-wide">
           <div class="chart-card-heading">
-            <span class="chart-index">05</span>
+            <span class="chart-index">08</span>
             <div>
               <h3>Heritage Grant Funding Over Time</h3>
               <p class="chart-description">
@@ -198,11 +226,11 @@
 
         <article class="chart-card">
           <div class="chart-card-heading">
-            <span class="chart-index">06</span>
+            <span class="chart-index">09</span>
             <div>
               <h3>Which States Receive Grant Support?</h3>
               <p class="chart-description">
-                Recorded grant funding by state and territory, excluding multi-state projects.
+                Recorded grant funding by state and territory, excluding multi-state projects and External Territories.
               </p>
             </div>
           </div>
@@ -211,11 +239,11 @@
 
         <article class="chart-card">
           <div class="chart-card-heading">
-            <span class="chart-index">07</span>
+            <span class="chart-index">10</span>
             <div>
               <h3>How Funding Varies by State and Year</h3>
               <p class="chart-description">
-                Annual grant funding across states and territories, 2018–2025.
+                Annual grant funding across states and territories, 2018-2025.
               </p>
             </div>
           </div>
@@ -224,11 +252,28 @@
 
         <article class="chart-card chart-wide">
           <div class="chart-card-heading">
+            <span class="chart-index">11</span>
+            <div>
+              <h3>Does Grant Funding Reflect Heritage Listing Concentration?</h3>
+              <p class="chart-description">
+                Compare the number of listed National Heritage places with recorded grant funding by state and territory.
+              </p>
+            </div>
+          </div>
+          <div id="chart-13" class="chart-container"></div>
+          <div class="chart-insight" aria-label="Chart insight">
+            <p>Overall, states with more listed places tend to receive more funding.</p>
+            <p>WA is an exception, receiving high funding despite fewer listed places.</p>
+          </div>
+        </article>
+
+        <article class="chart-card chart-wide">
+          <div class="chart-card-heading">
             <span class="chart-index">12</span>
             <div>
               <h3>What Types of Conservation Projects Receive Funding?</h3>
               <p class="chart-description">
-                Recorded funding amounts and grant records by project type.
+                Grant funding flows from funding round to state or territory and then to an inferred conservation project type.
               </p>
             </div>
           </div>
@@ -237,7 +282,7 @@
 
         <article class="chart-card chart-wide funding-map-card">
           <div class="chart-card-heading">
-            <span class="chart-index">09</span>
+            <span class="chart-index">13</span>
             <div>
               <h3>Which Heritage Sites Receive Conservation Funding?</h3>
               <p class="chart-description">
@@ -248,6 +293,7 @@
 
           <div id="chart-09" class="chart-container map-container"></div>
         </article>
+
       </div>
     </section>
 

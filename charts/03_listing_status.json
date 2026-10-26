@@ -67,15 +67,19 @@
           "Nominated place",
           "Within listed place"
         ],
-        "range": [
-          "#23483D",
-          "#D8A756",
-          "#B85F45"
+       "range": [
+          "#52765B",
+          "#C17D5A",
+          "#8C6B4F"
         ]
       },
       "legend": {
         "orient": "bottom",
-        "direction": "horizontal"
+        "direction": "vertical",
+        "labelLimit": 300,
+        "symbolType": "square",
+        "titleLimit": 300,
+        "labelExpr": "datum.label === 'Listed place' ? 'Listed place (126)' : datum.label === 'Nominated place' ? 'Nominated place (14)' : datum.label === 'Within listed place' ? 'Within listed place (3)' : datum.label"
       }
     },
     "tooltip": [

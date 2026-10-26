@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Slope chart comparing the cumulative number of listed National Heritage places in 2010 and 2026 across Australian states and territories.",
+  "data": {
+    "url": "data/listings_change_by_state.csv",
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    { "filter": "datum.year == 2010 || datum.year == 2026" }
+  ],
+  "width": "container",
+  "height": 330,
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "sort": [2010, 2026],
+      "title": null,
+      "axis": {
+        "labelFontSize": 13,
+        "labelFontWeight": "bold",
+        "labelPadding": 12,
+        "ticks": false,
+        "domain": false,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "title": "Cumulative listed heritage places",
+      "scale": { "zero": true, "nice": true },
+      "axis": {
+        "tickCount": 4,
+        "gridColor": "#E2DCCF",
+        "labelColor": "#666A64",
+        "titleColor": "#292C29"
+      }
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State / territory",
+      "scale": {
+        "domain": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"],
+        "range": ["#5B6770", "#2F6B8F", "#C2643F", "#4F8A63", "#B28A3E", "#6E5B95", "#A14F6B", "#3C7A78"]
+      },
+      "legend": null
+    },
+    "detail": { "field": "state" }
+  },
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 3, "opacity": 0.8 }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 80, "stroke": "#FFFEFA", "strokeWidth": 1.5 },
+      "encoding": {
+        "tooltip": [
+          { "field": "state_name", "type": "nominal", "title": "State / territory" },
+          { "field": "year", "type": "ordinal", "title": "Year" },
+          { "field": "count", "type": "quantitative", "title": "Listed places" }
+        ]
+      }
+    },
+    {
+      "transform": [{ "filter": "datum.year == 2010" }],
+      "mark": { "type": "text", "align": "right", "dx": -12, "fontSize": 11, "fontWeight": "bold" },
+      "encoding": {
+        "text": { "field": "state", "type": "nominal" }
+      }
+    },
+    {
+      "transform": [{ "filter": "datum.year == 2026" }],
+      "mark": { "type": "text", "align": "left", "dx": 12, "fontSize": 11, "fontWeight": "bold" },
+      "encoding": {
+        "text": { "field": "state", "type": "nominal" }
+      }
+    }
+  ],
+  "config": {
+    "background": "#FFFEFA",
+    "view": { "stroke": null },
+    "axis": { "labelFont": "Arial", "titleFont": "Arial" }
+  }
+}
